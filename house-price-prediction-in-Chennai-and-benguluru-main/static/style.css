@@ -1,0 +1,366 @@
+/* =====================================================
+   House Price Prediction - Modern & Responsive Stylesheet
+   ===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+body {
+    background: #f0f4f8;
+    color: #334155;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar */
+.navbar {
+    background: #1e293b;
+    padding: 14px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.nav-brand {
+    color: #ffffff;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.nav-brand span {
+    color: #38bdf8;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.25rem;
+    list-style: none;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #cbd5e1;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 6px 12px;
+    border-radius: 6px;
+    transition: background 0.2s, color 0.2s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: #ffffff;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+.mobile-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/* Layout Containers */
+.main-content {
+    flex: 1;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Home Section */
+.home-container {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.home-header {
+    margin-bottom: 35px;
+}
+
+.home-header h1 {
+    font-size: 2.3rem;
+    color: #0f172a;
+    margin-bottom: 12px;
+    font-weight: 800;
+}
+
+.home-header p {
+    font-size: 1.05rem;
+    color: #64748b;
+    max-width: 650px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* City Cards Grid */
+.city-cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.card {
+    background: #ffffff;
+    border-radius: 12px;
+    padding: 30px 25px;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    border: 1px solid #e2e8f0;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: flex;
+    flex-direction: column;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.card-tag {
+    display: inline-block;
+    padding: 4px 10px;
+    background: #e0f2fe;
+    color: #0369a1;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    align-self: flex-start;
+}
+
+.card h2 {
+    font-size: 1.4rem;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.card p {
+    color: #64748b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    flex-grow: 1;
+}
+
+/* Form Container (Chennai & Bengaluru) */
+.form-container {
+    background: #ffffff;
+    width: 100%;
+    max-width: 520px;
+    padding: 35px 30px;
+    border-radius: 12px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+    border: 1px solid #e2e8f0;
+}
+
+.form-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.form-header h2 {
+    color: #0f172a;
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.form-header p {
+    color: #64748b;
+    font-size: 0.9rem;
+}
+
+/* Form Inputs */
+.form-group {
+    margin-bottom: 16px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: #475569;
+    margin-bottom: 6px;
+}
+
+.form-group input,
+.form-group select {
+    width: 100%;
+    padding: 11px 14px;
+    font-size: 0.95rem;
+    color: #1e293b;
+    background: #f8fafc;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-group input:focus,
+.form-group select:focus {
+    border-color: #3b82f6;
+    background: #ffffff;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.15);
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 14px;
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s;
+}
+
+.btn-primary {
+    background: #2563eb;
+    color: #ffffff;
+}
+
+.btn-primary:hover {
+    background: #1d4ed8;
+}
+
+.btn-bengaluru {
+    background: #0284c7;
+    color: #ffffff;
+}
+
+.btn-bengaluru:hover {
+    background: #0369a1;
+}
+
+.btn-outline {
+    background: #f1f5f9;
+    color: #475569;
+    border: 1px solid #cbd5e1;
+    margin-top: 10px;
+}
+
+.btn-outline:hover {
+    background: #e2e8f0;
+    color: #1e293b;
+}
+
+/* Prediction Result Box */
+#result {
+    margin-top: 22px;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.1rem;
+    display: none;
+}
+
+.result-success {
+    background: #ecfdf5;
+    border: 1px solid #a7f3d0;
+    color: #065f46;
+}
+
+.result-success strong {
+    font-size: 1.35rem;
+    color: #047857;
+    display: block;
+    margin-top: 4px;
+}
+
+.result-error {
+    background: #fef2f2;
+    border: 1px solid #fecaca;
+    color: #991b1b;
+}
+
+/* Footer */
+.footer {
+    background: #1e293b;
+    color: #94a3b8;
+    text-align: center;
+    padding: 20px;
+    font-size: 0.88rem;
+    margin-top: auto;
+    border-top: 1px solid #334155;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+    .navbar {
+        padding: 12px 5%;
+    }
+
+    .mobile-btn {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: #1e293b;
+        padding: 15px 20px;
+        border-top: 1px solid #334155;
+        gap: 10px;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    .nav-links a {
+        width: 100%;
+        padding: 8px 12px;
+    }
+
+    .city-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .form-container {
+        padding: 25px 20px;
+    }
+
+    .home-header h1 {
+        font-size: 1.8rem;
+    }
+}

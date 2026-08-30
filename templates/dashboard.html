@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valuation Dashboard - ProphetAI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Main Navbar -->
+    <nav class="navbar">
+        <a href="/" class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-city"></i>
+            </div>
+            <span>Prophet<span class="highlight">AI</span></span>
+        </a>
+
+        <button class="mobile-toggle" id="mobileMenuBtn" aria-label="Toggle Menu">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+        <ul class="nav-links" id="navMenu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/chennai">Chennai</a></li>
+            <li><a href="/bengaluru">Bengaluru</a></li>
+            <li><a href="/dashboard" class="active">Dashboard</a></li>
+        </ul>
+
+        <div class="nav-actions">
+            <a href="/" class="btn btn-danger btn-sm">
+                <i class="fa-solid fa-arrow-right-from-bracket"></i> Logout
+            </a>
+        </div>
+    </nav>
+
+    <!-- Dashboard Content -->
+    <div class="main-wrapper">
+        <div class="dashboard-grid">
+            <div class="panel-card" style="text-align: center;">
+                <div class="auth-badge">
+                    <i class="fa-solid fa-gauge-high"></i> Control Center
+                </div>
+                <h2 style="font-size: 2rem; margin-bottom: 0.5rem; color: #fff;">Real Estate Valuation Hub</h2>
+                <p style="color: var(--text-muted); max-width: 600px; margin: 0 auto 2.5rem;">
+                    Select your desired target market to calculate current property prices, analyze configurations, and explore locality factors.
+                </p>
+
+                <div class="city-grid" style="margin-top: 0;">
+                    <!-- Chennai Option -->
+                    <div class="city-card">
+                        <div class="city-card-header">
+                            <div class="city-card-icon" style="color: #60a5fa;">
+                                <i class="fa-solid fa-tree-city"></i>
+                            </div>
+                            <span class="city-badge">Tamil Nadu</span>
+                        </div>
+                        <h3>Chennai Market</h3>
+                        <p>Evaluate flats, villas, and apartments in Adyar, Anna Nagar, Velachery, and OMR.</p>
+                        <a href="/chennai" class="btn btn-primary btn-block">
+                            <i class="fa-solid fa-calculator"></i> Launch Chennai Predictor
+                        </a>
+                    </div>
+
+                    <!-- Bengaluru Option -->
+                    <div class="city-card">
+                        <div class="city-card-header">
+                            <div class="city-card-icon" style="color: #34d399;">
+                                <i class="fa-solid fa-building-user"></i>
+                            </div>
+                            <span class="city-badge" style="background: rgba(6, 182, 212, 0.15); color: #38bdf8; border-color: rgba(6, 182, 212, 0.3);">Karnataka</span>
+                        </div>
+                        <h3>Bengaluru Market</h3>
+                        <p>Analyze properties in Whitefield, Electronic City, Indiranagar, and tech corridors.</p>
+                        <a href="/bengaluru" class="btn btn-primary btn-block" style="background: linear-gradient(135deg, #0891b2, #0284c7);">
+                            <i class="fa-solid fa-calculator"></i> Launch Bengaluru Predictor
+                        </a>
+                    </div>
+                </div>
+
+                <div style="margin-top: 2rem; display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+                    <a href="/" class="btn btn-secondary">
+                        <i class="fa-solid fa-house"></i> Home Page
+                    </a>
+                    <a href="/" class="btn btn-danger">
+                        <i class="fa-solid fa-right-from-bracket"></i> Sign Out
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <p class="footer-copy">© 2026 ProphetAI Real Estate Valuation. All rights reserved.</p>
+    </footer>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
