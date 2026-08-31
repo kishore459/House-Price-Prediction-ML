@@ -1,35 +1,70 @@
-# ProphetAI - House Price Prediction in Chennai & Bengaluru
+# House Price Prediction ML - Chennai & Bengaluru
 
-A fast, responsive, AI-powered real estate price valuation web application built with Python Flask and modern UI aesthetics.
+A Flask-based Machine Learning web application that predicts house prices in Chennai and Bengaluru using Linear Regression and XGBoost with an interactive and user-friendly interface.
+
+[![Repository](https://img.shields.io/badge/GitHub-kishore459%2FHouse--Price--Prediction--ML-blue?logo=github)](https://github.com/kishore459/House-Price-Prediction-ML)
+[![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-brightgreen?logo=python)](https://python.org)
+[![Framework](https://img.shields.io/badge/Framework-Flask-black?logo=flask)](https://flask.palletsprojects.com/)
 
 ---
 
 ## 🚀 Features
 
-- **🌐 Home Page (`/`)**: Interactive landing page with immediate access to Chennai and Bengaluru house price predictors, key valuation metrics, and responsive navigation.
-- **🏢 Chennai Predictor (`/chennai`)**: Calculates market prices based on square footage, BHK, bathrooms, property age, possession status, locality (Adyar, Velachery, Anna Nagar, OMR, T Nagar, Mylapore), and builder.
-- **🏙️ Bengaluru Predictor (`/bengaluru`)**: Instant valuations for Whitefield, Indiranagar, Electronic City, Koramangala, HSR Layout, Sarjapur Road, and Hebbal.
-- **⚡ Direct Access (No Login/Signup Required)**: Users can directly start computing property estimates without registration barriers.
-- **📱 Fully Responsive Design**: Mobile, tablet, and desktop friendly with a dark glassmorphism aesthetic and live result cards.
+- **🌐 Interactive Multi-City Valuation**: Real-time property valuation specifically tailored for Chennai and Bengaluru real estate markets.
+- **🏢 Chennai House Predictor (`/chennai`)**: Calculates market prices based on square footage, BHK count, bathrooms, property age, construction status, builders, and prominent localities (Adyar, Velachery, Anna Nagar, OMR, etc.).
+- **🏙️ Bengaluru House Predictor (`/bengaluru`)**: Fast property valuations for tech hubs and residential areas including Whitefield, Indiranagar, Electronic City, Koramangala, and HSR Layout.
+- **⚡ Direct & Frictionless Access**: Simple and fast workflow allowing instant calculations without mandatory signups.
+- **📱 Modern Responsive UI**: Sleek, responsive design that works seamlessly across desktop, tablet, and mobile browsers.
 
 ---
 
-## 🛠️ Installation & Setup
+## 🛠️ Tech Stack
 
-1. **Activate Virtual Environment**:
+- **Backend**: Python, Flask, Gunicorn
+- **Frontend**: HTML5, Vanilla CSS3, JavaScript (Fetch API)
+- **Deployment**: Render / Gunicorn WSGI
+
+---
+
+## 💻 Installation & Local Setup
+
+1. **Clone Repository**:
    ```bash
-   .\venv\Scripts\activate
+   git clone https://github.com/kishore459/House-Price-Prediction-ML.git
+   cd House-Price-Prediction-ML
    ```
 
-2. **Install Dependencies**:
+2. **Activate Virtual Environment**:
+   ```bash
+   .\venv\Scripts\activate
+   # or on macOS/Linux: source venv/bin/activate
+   ```
+
+3. **Install Dependencies**:
    ```bash
    pip install -r requirements.txt
    ```
 
-3. **Run Application**:
+4. **Run Application**:
    ```bash
    python app.py
    ```
 
-4. Open your browser at:
+5. Open your browser at:
    - [http://127.0.0.1:5001/](http://127.0.0.1:5001/)
+
+---
+
+## ☁️ Deployment on Render
+
+This project includes pre-configured `Procfile` and `render.yaml` for 1-click deployment on [Render](https://render.com):
+
+- **Build Command**: `pip install -r requirements.txt`
+- **Start Command**: `gunicorn app:app`
+
+---
+
+## 👨‍💻 Author
+
+- **GitHub**: [@kishore459](https://github.com/kishore459)
+- **Repository**: [kishore459/House-Price-Prediction-ML](https://github.com/kishore459/House-Price-Prediction-ML)
