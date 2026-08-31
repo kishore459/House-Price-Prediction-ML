@@ -37,12 +37,8 @@ House-Price-Prediction-ML/
 │
 ├── templates/
 │   ├── home.html             # Home / Landing page
-│   ├── chennai.html          # Chennai price predictor page
-│   ├── bengaluru.html        # Bengaluru price predictor page
-│   ├── dashboard.html        # Valuation dashboard interface
-│   ├── login.html            # User login interface
-│   ├── register.html         # User registration interface
-│   └── forgot_password.html  # Password recovery interface
+│   ├── chennai.html          # Chennai house price predictor
+│   └── bengaluru.html        # Bengaluru house price predictor
 │
 ├── app.py                    # Flask application routes and prediction APIs
 ├── Procfile                  # Gunicorn server startup config for cloud deployment
