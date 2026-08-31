@@ -21,8 +21,35 @@ A Flask-based Machine Learning web application that predicts house prices in Che
 ## 🛠️ Tech Stack
 
 - **Backend**: Python, Flask, Gunicorn
-- **Frontend**: HTML5, Vanilla CSS3, JavaScript (Fetch API)
+- **Frontend**: HTML, CSS, JavaScript (Fetch API)
 - **Deployment**: Render / Gunicorn WSGI
+
+---
+
+## 📁 Project Structure
+
+```text
+House-Price-Prediction-ML/
+│
+├── static/
+│   ├── style.css             # Main stylesheet for responsive UI and styling
+│   └── script.js             # JavaScript for handling forms and API requests
+│
+├── templates/
+│   ├── home.html             # Home / Landing page
+│   ├── chennai.html          # Chennai price predictor page
+│   ├── bengaluru.html        # Bengaluru price predictor page
+│   ├── dashboard.html        # Valuation dashboard interface
+│   ├── login.html            # User login interface
+│   ├── register.html         # User registration interface
+│   └── forgot_password.html  # Password recovery interface
+│
+├── app.py                    # Flask application routes and prediction APIs
+├── Procfile                  # Gunicorn server startup config for cloud deployment
+├── render.yaml               # Render blueprint configuration file
+├── requirements.txt          # Required Python packages
+└── README.md                 # Project documentation and guide
+```
 
 ---
 
