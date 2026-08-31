@@ -98,5 +98,7 @@ The web application is live on [Render](https://render.com):
 
 ## 👨‍💻 Author
 
-- **GitHub**: [@kishore459](https://github.com/kishore459)
-- **Repository**: [kishore459/House-Price-Prediction-ML](https://github.com/kishore459/House-Price-Prediction-ML)
+- **GitHub Profile**: [@kishore459](https://github.com/kishore459) &bull; [kishore459/kishore459](https://github.com/kishore459/kishore459)
+- **Project Repository**: [kishore459/House-Price-Prediction-ML](https://github.com/kishore459/House-Price-Prediction-ML)
+- **Live Deployment**: [https://house-price-prediction-ml-nz34.onrender.com](https://house-price-prediction-ml-nz34.onrender.com/)
+
