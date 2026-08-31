@@ -2,9 +2,17 @@
 
 A Flask-based Machine Learning web application that predicts house prices in Chennai and Bengaluru using Linear Regression and XGBoost with an interactive and user-friendly interface.
 
-[![Repository](https://img.shields.io/badge/GitHub-kishore459%2FHouse--Price--Prediction--ML-blue?logo=github)](https://github.com/kishore459/House-Price-Prediction-ML)
-[![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-brightgreen?logo=python)](https://python.org)
-[![Framework](https://img.shields.io/badge/Framework-Flask-black?logo=flask)](https://flask.palletsprojects.com/)
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Render-46E3B7?style=for-the-badge&logo=render&logoColor=black)](https://house-price-prediction-ml-nz34.onrender.com/)
+[![Repository](https://img.shields.io/badge/GitHub-kishore459%2FHouse--Price--Prediction--ML-blue?style=for-the-badge&logo=github)](https://github.com/kishore459/House-Price-Prediction-ML)
+[![Python](https://img.shields.io/badge/Python-3.9%20%7C%203.10%20%7C%203.11-brightgreen?style=for-the-badge&logo=python)](https://python.org)
+[![Framework](https://img.shields.io/badge/Framework-Flask-black?style=for-the-badge&logo=flask)](https://flask.palletsprojects.com/)
+
+---
+
+## 🌐 Live Demo
+
+The application is deployed and live at:
+👉 **[https://house-price-prediction-ml-nz34.onrender.com](https://house-price-prediction-ml-nz34.onrender.com/)**
 
 ---
 
@@ -80,8 +88,9 @@ House-Price-Prediction-ML/
 
 ## ☁️ Deployment on Render
 
-This project includes pre-configured `Procfile` and `render.yaml` for 1-click deployment on [Render](https://render.com):
+The web application is live on [Render](https://render.com):
 
+- **Live URL**: [https://house-price-prediction-ml-nz34.onrender.com](https://house-price-prediction-ml-nz34.onrender.com/)
 - **Build Command**: `pip install -r requirements.txt`
 - **Start Command**: `gunicorn app:app`
 
